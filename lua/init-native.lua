@@ -38,6 +38,15 @@ require('lazy').setup({
   { import = 'plugins.leap' },
   { import = 'plugins.nvim-surround' },
 
+  {
+    "rmagatti/auto-session",
+    config = function()
+      require("auto-session").setup {
+        log_level = "error",
+      }
+    end
+  },
+
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
